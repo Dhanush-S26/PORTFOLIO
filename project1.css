@@ -1,0 +1,375 @@
+/* Universal Selector */
+*{
+    top: 0;
+    margin: 0;
+    padding: 0;
+    font-family: "Poppins", sans-serif;
+    font-weight: 300;
+    font-style: normal;
+}
+body{
+    font-size: 20px;
+}
+
+/* Static Header Section */
+header{
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    padding: 10px 20px;
+    border-bottom: 1px solid rgb(191, 190, 190);
+    background-color: white;
+    z-index: 2;
+}
+header nav{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+header nav ul li{
+    display: inline;
+    padding-right: 10px;
+}
+header a{
+    text-decoration: none;
+    color: #000000;
+}
+header a:hover{
+    text-decoration: underline;
+    font-weight: bold;
+}
+
+/* Hamburger Header Section */
+.hamburger{
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 20px;
+    border-bottom: 1px solid rgb(191, 190, 190);
+    background-color: white;
+    z-index: 2;
+    display: none;
+}
+.hamburger p:hover{
+    cursor: pointer;
+}
+
+/* Responsive Header Section */
+.responsivenavbar{
+    position: fixed;
+    text-align: center;
+    top: 65px;
+    bottom: 0;
+    display: flex;
+    justify-self: end;
+    background-color: #000000;
+    opacity: 0.7;
+    animation: responsivenavbar 1s linear;
+    z-index: 2;
+    display: none;
+}
+@keyframes responsivenavbar {
+    0%{
+        transform: translateX(100px);
+    }
+    100%{
+        transform: translateX(0px);
+    }
+}
+.responsivenavbar ul li{
+    list-style: none;
+    margin: 20px 50px;
+}
+.responsivenavbar ul li a{
+    color: white;
+    text-decoration: none;
+}
+.responsivenavbar ul li i{
+    color: red;
+    font-size: 25px;
+}
+.responsivenavbar ul li i:hover{
+    cursor: pointer;
+}
+.responsivenavbar ul li a:hover{
+    font-weight: bold;
+    text-decoration: underline;
+}
+
+/* Project1 Section */
+#project1about h1{
+    padding-top: 90px;
+    text-align: center;
+    font-weight: bolder;
+}
+#project1about{
+    padding-bottom: 90px;
+}
+.project1{
+    width: 60%;
+    margin: 10px 20%;
+    display: flex;
+    overflow: hidden;
+    box-shadow: 0px 5px 10px black;
+}
+.project1 img{
+    width: 100%;
+    animation: pro1img 80s infinite;
+}
+@keyframes pro1img {
+    0%{
+        transform: translateX(0px);
+    }
+    5%{
+        transform: translateX(-100%);
+    }
+    10%{
+        transform: translateX(-200%);
+    }
+    15%{
+        transform: translateX(-300%);
+    }
+    20%{
+        transform: translateX(-400%);
+    }
+    25%{
+        transform: translateX(-500%);
+    }
+    30%{
+        transform: translateX(-600%);
+    }
+    35%{
+        transform: translateX(-700%);
+    }
+    40%{
+        transform: translateX(-800%);
+    }
+    45%{
+        transform: translateX(-900%);
+    }
+    50%{
+        transform: translateX(-1000%);
+    }
+    55%{
+        transform: translateX(-1100%);
+    }
+    60%{
+        transform: translateX(-1200%);
+    }
+    65%{
+        transform: translateX(-1300%);
+    }
+    70%{
+        transform: translateX(-1400%);
+    }
+    75%{
+        transform: translateX(-1500%);
+    }
+    80%{
+        transform: translateX(-1600%);
+    }
+    85%{
+        transform: translateX(-1700%);
+    }
+    90%{
+        transform: translateX(-1800%);
+    }
+    100%{
+        transform: translateX(0px);
+    }
+}
+
+/* Project2 Section */
+#project2about h1{
+    padding-top: 90px;
+    text-align: center;
+    font-weight: bolder;
+}
+#project2about{
+    padding-bottom: 90px;
+}
+.project2{
+    width: 60%;
+    margin: 10px 20%;
+    display: flex;
+    overflow: hidden;
+    box-shadow: 0px 5px 10px black;
+}
+.project2 img{
+    width: 100%;
+    animation: pro2img 80s infinite;
+}
+@keyframes pro2img {
+    0%{
+        transform: translateX(0px);
+    }
+    5%{
+        transform: translateX(-100%);
+    }
+    10%{
+        transform: translateX(-200%);
+    }
+    15%{
+        transform: translateX(-300%);
+    }
+    20%{
+        transform: translateX(-400%);
+    }
+    25%{
+        transform: translateX(-500%);
+    }
+    30%{
+        transform: translateX(-600%);
+    }
+    35%{
+        transform: translateX(-700%);
+    }
+    40%{
+        transform: translateX(-800%);
+    }
+    45%{
+        transform: translateX(-900%);
+    }
+    50%{
+        transform: translate(-800%);
+    }
+    55%{
+        transform: translateX(-700%);
+    }
+    60%{
+        transform: translateX(-600%);
+    }
+    65%{
+        transform: translateX(-500%);
+    }
+    70%{
+        transform: translateX(-400%);
+    }
+    75%{
+        transform: translateX(-300%);
+    }
+    80%{
+        transform: translateX(-200%);
+    }
+    90%{
+        transform: translateX(-100%);
+    }
+    100%{
+        transform: translateX(0px);
+    }
+}
+
+/* Project3 Section */
+#project3about h1{
+    padding-top: 90px;
+    text-align: center;
+    font-weight: bolder;
+}
+#project3about{
+    padding-bottom: 90px;
+}
+.project3{
+    width: 60%;
+    margin: 10px 20%;
+    display: flex;
+    overflow: hidden;
+    box-shadow: 0px 5px 10px black;
+}
+.project3 img{
+    width: 100%;
+    animation: pro3img 60s infinite;
+}
+@keyframes pro3img {
+    0%{
+        transform: translateX(0px);
+    }
+    10%{
+        transform: translateX(-100%);
+    }
+    20%{
+        transform: translateX(-200%);
+    }
+    30%{
+        transform: translateX(-300%);
+    }
+    40%{
+        transform: translateX(-400%);
+    }
+    50%{
+        transform: translateX(-500%);
+    }
+    60%{
+        transform: translateX(-400%);
+    }
+    70%{
+        transform: translateX(-300%);
+    }
+    80%{
+        transform: translateX(-200%);
+    }
+    90%{
+        transform: translateX(-100%);
+    }
+    100%{
+        transform: translateX(0px);
+    }    
+}
+
+
+/* Media Query */
+/* max-width: 750px */
+@media screen and (max-width:750px){
+    /* Hamburger Header Section */
+    .hamburger{
+        display: flex;
+    }
+    header{
+        display: none;
+    }
+
+    /* Project1 Section */
+    .project1{
+        width: 80%;
+        margin: 10px 10%;
+    }
+
+    /* Project2 Section */
+    .project2{
+        width: 80%;
+        margin: 10px 10%;
+    }
+
+    /* Project3 Section */
+    .project3{
+        width: 80%;
+        margin: 10px 10%;
+    }
+    
+}
+
+/* Media Query */
+/* max-width: 450px */
+@media screen and (max-width:450px){
+    /* Project1 Section */
+    .project1{
+        width: 90%;
+        margin: 10px 5%;
+    }
+
+    /* Project2 Section */
+    .project2{
+        width: 90%;
+        margin: 10px 5%;
+    }
+
+    /* Project3 Section */
+    .project3{
+        width: 90%;
+        margin: 10px 5%;
+    }
+}

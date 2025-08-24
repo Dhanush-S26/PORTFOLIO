@@ -1,0 +1,386 @@
+/* Universal Selector */
+*{
+    top: 0;
+    margin: 0;
+    padding: 0;
+    font-family: "Poppins", sans-serif;
+    font-weight: 300;
+    font-style: normal;
+}
+body{
+    font-size: 20px;
+}
+
+/* Static Header Section */
+header{
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    padding: 10px 20px;
+    border-bottom: 1px solid rgb(191, 190, 190);
+    background-color: white;
+    z-index: 2;
+}
+header nav{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+header nav ul li{
+    display: inline;
+    padding-right: 10px;
+}
+header a{
+    text-decoration: none;
+    color: #000000;
+}
+header a:hover{
+    text-decoration: underline;
+    font-weight: bold;
+}
+
+/* Hamburger Header Section */
+.hamburger{
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 20px;
+    border-bottom: 1px solid rgb(191, 190, 190);
+    background-color: white;
+    z-index: 2;
+    display: none;
+}
+.hamburger p:hover{
+    cursor: pointer;
+}
+
+/* Responsive Header Section */
+.responsivenavbar{
+    position: fixed;
+    text-align: center;
+    top: 65px;
+    bottom: 0;
+    display: flex;
+    justify-self: end;
+    background-color: #000000;
+    opacity: 0.7;
+    animation: responsivenavbar 1s linear;
+    z-index: 2;
+    display: none;
+}
+@keyframes responsivenavbar {
+    0%{
+        transform: translateX(100px);
+    }
+    100%{
+        transform: translateX(0px);
+    }
+}
+.responsivenavbar ul li{
+    list-style: none;
+    margin: 20px 50px;
+}
+.responsivenavbar ul li a{
+    color: white;
+    text-decoration: none;
+}
+.responsivenavbar ul li i{
+    color: red;
+    font-size: 25px;
+}
+.responsivenavbar ul li i:hover{
+    cursor: pointer;
+}
+.responsivenavbar ul li a:hover{
+    font-weight: bold;
+    text-decoration: underline;
+}
+
+/* Home Section */
+.home{
+    margin: 115px 100px;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    padding: 50px;
+    background-color: rgb(244, 244, 244);
+}
+.home h1{
+    font-size: 50px;
+    margin-bottom: 20px;
+    /* font-weight: bolder; */
+}
+.home img{
+    width: 300px;
+    height: 300px;
+    border-radius: 50%;
+}
+.home h1 a{
+    font-size: 25px;
+    color: #000000;
+    background: rgb(244, 244, 244);
+    border: 1px solid black;
+    text-decoration: none;
+    padding: 5px 10px;
+    border-radius: 10px;
+}
+.home h1 a:hover{
+    color: white;
+    background: linear-gradient(orange, red);
+    border: none;
+}
+
+/* About Section */
+.aboutsection{
+    display: flex;
+    align-items: center;
+    padding: 50px 150px;
+}
+.aboutsection img{
+    width: 300px;
+    height: 300px;
+    border-radius: 10px;
+}
+.aboutsection div{
+    margin: 15px;
+}
+.about{
+    animation: about linear;
+    animation-timeline: view();
+    animation-range: entry 0 cover 30%;
+}
+@keyframes about {
+    0%{
+        transform: translateX(-100px);
+        opacity: 0;
+    }
+    100%{
+        transform: translateX(0px);
+        opacity: 1;
+    }
+}
+.aboutme{
+    animation: aboutme linear;
+    animation-timeline: view();
+    animation-range: entry 0 cover 30%;
+}
+@keyframes aboutme {
+    0%{
+        transform: translateX(100px);
+        opacity: 0;
+    }
+    100%{
+        transform: translateX(0px);
+        opacity: 1;
+    }
+}
+
+
+/* Skills Section */
+.skill{
+    padding: 10px 50px;
+    background-color: rgb(244, 244, 244);
+}
+.skillssection{
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-evenly;
+    text-align: center;
+}
+.skillssection img{
+    width: 100px;
+    height: 100px;
+}
+.skillssection div{
+    padding: 10px;
+    margin: 15px;
+    border-radius: 10px;
+    box-shadow: 0px 5px 10px black;
+    transition: 1s;
+}
+.skillssection div:hover{
+    transform: scale(1.05);
+}
+
+/* Projects Section */
+.projectssection{
+    margin-bottom: 50px;
+}
+.projects{
+    display: flex;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+}
+.project{
+    margin: 20px;
+    width: 400px;
+    height: 570px;
+    text-align: center;
+    background-color: rgb(224, 224, 224);
+    border: 1px solid rgb(191, 190, 190);
+    border-radius: 10px;
+    transition: 1s;
+}
+.project:hover{
+    box-shadow: 0px 5px 10px black;
+}
+.project img{
+    width: 400px;
+    height: 300px;
+    border-top-right-radius: 10px;
+    border-top-left-radius: 10px;
+}
+.project a{
+    text-decoration: none;
+    color: white;
+    background-color: #000000;
+    padding: 5px 10px;
+    border-radius: 5px;
+}
+
+/* Contact Section */
+.contactsection{
+    padding: 50px 400px;
+    background-color: rgb(244, 244, 244);
+}
+form{
+    display: flex;
+    flex-direction: column;
+}
+.contactsection input, textarea{
+    margin-bottom: 20px;
+    font-size: 20px;
+    padding: 5px 10px;
+}
+.contactsection button{
+    margin: 0px 100px;
+    font-size: 20px;
+    color: white;
+    background-color: #000000;
+    padding: 5px 10px;
+    border-radius: 5px;
+}
+.contactsection button:hover{
+    cursor: pointer;
+}
+
+/* Footer Section */
+footer{
+    margin-top: 50px;
+    background-color: black;
+    color: white;
+    padding: 20px 5px;
+    text-align: center;
+}
+footer a{
+    color: white;
+}
+footer i{
+    margin: 0px 10px;
+}
+
+
+/* Media Query */
+/* max-width: 1120px */
+@media screen and (max-width:1120px){
+    /* Home Section */
+    .home{
+    margin: 100px 80px;
+    }
+    .home h1{
+        font-size: 40px;
+    }
+
+    /* About Section */
+    .aboutsection{
+    padding: 50px 50px;
+    }
+
+    /* Contact Section */
+    .contactsection{
+        padding: 50px 150px;
+    }
+}
+
+/* max-width: 750px */
+@media screen and (max-width:750px){
+    /* Hamburger Header Section */
+    .hamburger{
+        display: flex;
+    }
+    header{
+        display: none;
+    }
+
+    /* Home Section */
+    .home{
+        flex-direction: column;
+        margin: 60px 40px;
+        padding: 30px;
+        text-align: center;
+        transform: none;
+    }
+    .home h1{
+        transform: none;
+    }
+    .home img{
+        transform: none;
+    }
+
+    /* About Section */
+    .aboutsection{
+    flex-direction: column;
+    }
+
+    /* Contact Section */
+    .contactsection{
+        padding: 50px 50px;
+    }
+}
+
+
+/* max-width:450px */
+@media screen and (max-width:450px) {
+    /* Home Section */
+    .home{
+        margin: 60px 10px;
+        padding: 15px;
+    }
+    .home img{
+        width: 200px;
+        height: 200px;
+    }
+
+    /* About Section */
+    .aboutsection{
+        padding: 50px 20px;
+    }
+
+    /* Projects Section */
+    .project{
+        margin: 10px;
+        width: 300px;
+        height: 530px;
+    }
+    .project:hover{
+        box-shadow: 0px 5px 10px black;
+    }
+    .project img{
+        width: 300px;
+        height: 200px;
+    }
+
+    /* Contact Section */
+    .contactsection{
+        padding: 50px 20px;
+    }
+    .contactsection button{
+        margin: 0px 50px;
+    }
+}

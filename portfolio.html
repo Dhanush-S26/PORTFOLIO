@@ -1,0 +1,241 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>DHANUSH S - Portfolio</title>
+    <!-- Title Icon -->
+    <link rel="icon" href="image/portfolio_title_icon.png" />
+    <!-- CSS Link -->
+    <link rel="stylesheet" href="portfolio.css" />
+    <!-- Google Fonts Link -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Anek+Latin:wght@100..800&family=Gideon+Roman&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap"
+      rel="stylesheet"
+    />
+    <!-- Font Awesome Cdn Link -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.0/css/all.min.css"
+      integrity="sha512-DxV+EoADOkOygM4IR9yXP8Sb2qwgidEmeqAEmDKIOfPRQZOWbXCzLC6vjbZyy0vPisbH2SyW27+ddLVCN+OMzQ=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+  </head>
+  <body>
+    <!-- Static Header Section -->
+    <header>
+      <nav>
+        <h1 style="font-weight: bolder">
+          <i class="fa-solid fa-user-tie"></i> PORTFOLIO
+        </h1>
+        <ul>
+          <li><a href="#home">Home</a></li>
+          <li><a href="#aboutsection">About</a></li>
+          <li><a href="#skill">Skills</a></li>
+          <li><a href="#projectssection">Projects</a></li>
+          <li><a href="#contactsection">Contact</a></li>
+        </ul>
+      </nav>
+    </header>
+    <!-- Hamburger Header Section -->
+    <nav class="hamburger">
+      <h1 style="font-weight: bolder">
+        <i class="fa-solid fa-user-tie"></i> PORTFOLIO
+      </h1>
+      <p id="hamburgermenu" onclick="openSideNavBar()">
+        <i class="fa-solid fa-bars"></i>
+      </p>
+    </nav>
+    <!-- Responsive Header Section -->
+    <nav class="responsivenavbar" id="responsenavbar">
+      <ul>
+        <li onclick="closeSideNavBar()"><i class="fa-solid fa-xmark"></i></li>
+        <li onclick="closeSideNavBar()"><a href="#home">Home</a></li>
+        <li onclick="closeSideNavBar()"><a href="#aboutsection">About</a></li>
+        <li onclick="closeSideNavBar()"><a href="#skill">Skills</a></li>
+        <li onclick="closeSideNavBar()">
+          <a href="#projectssection">Projects</a>
+        </li>
+        <li onclick="closeSideNavBar()">
+          <a href="#contactsection">Contact</a>
+        </li>
+      </ul>
+    </nav>
+    <!-- Home Section -->
+    <div id="home" style="padding-top: 75px"></div>
+    <div class="home">
+      <h1>
+        Hi, I'm <span style="font-weight: bold">Dhanush S</span>. <br />
+        Explore my creative vault. <br />
+        <span style="font-size: 40px; font-weight: bold"
+          >Software Developer</span
+        >
+        <br />
+        <a href="image/Resume.pdf">Download CV</a>
+      </h1>
+      <img src="image/me.jpg" alt="Photo" />
+    </div>
+    <!-- About Section -->
+    <div id="aboutsection" style="padding-top: 20px"></div>
+    <div class="aboutsection">
+      <div class="about">
+        <img src="image/aboutme.jpg" alt="Photo" />
+      </div>
+      <div class="aboutme">
+        <h1 style="font-weight: bold">About Me</h1>
+        <p>
+          I'm Dhanush S. I enjoy building responsive, user-friendly websites and
+          have hands-on experience with HTML, CSS, Bootstrap, and JavaScript.
+          I'm passionate about technology and love exploring new tools and
+          frameworks that enhance efficiency and drive innovation. I'm eager to
+          grow within a tech-driven team and continue learning every day.
+        </p>
+        <p><i class="fa-solid fa-envelope"></i> dhanush260202@gmail.com</p>
+        <p><i class="fa-solid fa-phone"></i> +91 6374075779</p>
+        <p style="font-weight: bolder; margin-top: 10px">
+          “A great UI is like a good handshake—clear, confident, and instantly
+          reassuring.”
+        </p>
+      </div>
+    </div>
+    <!-- Skills Section -->
+    <div id="skill" style="padding-top: 20px"></div>
+    <div class="skill">
+      <h1 style="font-weight: bold; text-align: center; padding: 40px 0px">
+        Skills
+      </h1>
+      <div class="skillssection">
+        <div>
+          <img src="image/html.png" alt="HTML" />
+          <p>HTML</p>
+        </div>
+        <div>
+          <img src="image/css.png" alt="CSS" />
+          <p>CSS</p>
+        </div>
+        <div>
+          <img src="image/javascript.png" alt="JavaScript" />
+          <p>JavaScript</p>
+        </div>
+        <div>
+          <img src="image/bootstrap.png" alt="Bootstrap" />
+          <p>Bootstrap</p>
+        </div>
+        <div>
+          <img src="image/python.png" alt="Python" />
+          <p>Python</p>
+        </div>
+        <div>
+          <img src="image/sql.png" alt="Sql" />
+          <p>SQL</p>
+        </div>
+      </div>
+    </div>
+    <!-- Projects Section -->
+    <div id="projectssection" style="padding-top: 30px"></div>
+    <div class="projectssection">
+      <h1 style="font-weight: bold; text-align: center; padding: 40px 0px">
+        Projects
+      </h1>
+      <div class="projects">
+        <div class="project">
+          <img src="image/project1.jpg" alt="Project1" />
+          <p style="font-weight: bold; padding: 5px">
+            Recipe Sharing Community
+          </p>
+          <p style="padding: 10px 5px">
+            Built a recipe-sharing community platform using HTML, CSS, and
+            JavaScript for the front-end, PHP for server-side scripting, and
+            MySQL for database management.
+          </p>
+          <a href="project1.html#project1about">View Project</a>
+        </div>
+        <div class="project">
+          <img src="project2/trendy1.png" alt="Project2" />
+          <p style="font-weight: bold; padding: 5px">
+            A Trendy Men's Fashion Website
+          </p>
+          <p style="padding: 10px 5px">
+            Created a responsive men's fashion website, Trendy, using HTML, CSS,
+            and JavaScript, featuring modern layouts, features, and
+            mobile-optimized design.
+          </p>
+          <a href="project1.html#project2about">View Project</a>
+        </div>
+        <div class="project">
+          <img src="project3/port1.png" alt="Project3" />
+          <p style="font-weight: bold; padding: 5px">Portfolio Website</p>
+          <p style="padding: 10px 5px">
+            Developed a responsive portfolio website using HTML, CSS, and
+            JavaScript to showcase my skills and projects. Optimized for both
+            mobile and desktop devices.
+          </p>
+          <a href="project1.html#project3about">View Project</a>
+        </div>
+      </div>
+    </div>
+    <!-- Contact Section -->
+    <div id="contactsection" style="padding-top: 20px"></div>
+    <div class="contactsection">
+      <h1 style="font-weight: bold; text-align: center; margin-bottom: 20px">
+        Get In Touch
+      </h1>
+      <!-- Using Web3Forms action attribute and public access key -->
+      <form action="https://api.web3forms.com/submit" method="POST">
+        <!-- https://formspree.io/f/mgvzbnqw -->
+        <input
+          type="hidden"
+          name="access_key"
+          value="97319405-1598-4e52-bb16-4d08e1d27ed0"
+        />
+        <input
+          type="hidden"
+          name="redirect"
+          value="http://127.0.0.1:5500//thankyou.html"
+        />
+        <input
+          type="text"
+          placeholder="Your Name"
+          name="name"
+          id="name"
+          required
+        />
+        <input
+          type="email"
+          placeholder="Your Email"
+          name="email"
+          id="email"
+          required
+        />
+        <textarea
+          name="message"
+          id="message"
+          placeholder="Your Message"
+          rows="5"
+          cols="10"
+          required
+        ></textarea>
+        <button type="submit">Send Message</button>
+      </form>
+    </div>
+    <!-- Footer Section -->
+    <footer>
+      <h1>Dhanush S</h1>
+      <a href="https://github.com/Dhanush-S26"
+        ><i class="fa-brands fa-github"></i
+      ></a>
+      <a href="https://www.linkedin.com/in/dhanushs26/"
+        ><i class="fa-brands fa-linkedin"></i
+      ></a>
+      <br />
+      <i class="fa-regular fa-copyright"></i> 2025 Dhanush S. All rights
+      reserved.
+    </footer>
+
+    <!-- JavaScript Link -->
+    <script src="portfolio.js"></script>
+  </body>
+</html>
